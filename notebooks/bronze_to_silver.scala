@@ -1,6 +1,6 @@
 // Databricks notebook source
 // MAGIC %python
-// MAGIC dbutils.fs.ls("/mnt/dados/bronze")
+// MAGIC dbutils.fs.ls("/mnt/dados/Bronze")
 
 // COMMAND ----------
 
@@ -9,7 +9,7 @@
 
 // COMMAND ----------
 
-val path = "dbfs:/mnt/dados/bronze/dataset_imoveis"
+val path = "dbfs:/mnt/dados/Bronze/dataset_imoveis"
 val df = spark.read.format("delta").load(path)
 
 // COMMAND ----------
@@ -44,7 +44,7 @@ display(df_silver)
 
 // COMMAND ----------
 
-val path = "dbfs:/mnt/dados/silver/dataset_imoveis"
+val path = "dbfs:/mnt/dados/Silver/dataset_imoveis"
 df_silver.write.format("delta").mode("overwrite").save(path)
 
 // COMMAND ----------

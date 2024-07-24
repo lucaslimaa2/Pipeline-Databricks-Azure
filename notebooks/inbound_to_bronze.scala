@@ -5,7 +5,7 @@
 // COMMAND ----------
 
 // MAGIC %python
-// MAGIC dbutils.fs.ls("/mnt/dados/inbound")
+// MAGIC dbutils.fs.ls("/mnt/dados/Raw")
 
 // COMMAND ----------
 
@@ -14,7 +14,7 @@
 
 // COMMAND ----------
 
-val path = "dbfs:/mnt/dados/inbound/dados_brutos_imoveis.json"
+val path = "dbfs:/mnt/dados/Raw/dados_brutos_imoveis.json"
 val dados = spark.read.json(path)
 
 // COMMAND ----------
@@ -56,25 +56,5 @@ display(df_bronze)
 
 // COMMAND ----------
 
-val path = "dbfs:/mnt/dados/bronze/dataset_imoveis"
+val path = "dbfs:/mnt/dados/Bronze/dataset_imoveis"
 df_bronze.write.format("delta").mode(SaveMode.Overwrite).save(path)
-
-// COMMAND ----------
-
-
-
-// COMMAND ----------
-
-
-
-// COMMAND ----------
-
-
-
-// COMMAND ----------
-
-
-
-// COMMAND ----------
-
-
