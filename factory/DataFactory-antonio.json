@@ -1,9 +1,0 @@
-{
-	"name": "DataFactory-antonio",
-	"location": "eastus2",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "c34ec1ca-980c-428d-9b6a-958d38a017ea",
-		"tenantId": "c866bcb2-0601-4b17-ac0b-ffc49062e72c"
-	}
-}
