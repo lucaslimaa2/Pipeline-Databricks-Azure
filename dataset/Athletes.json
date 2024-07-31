@@ -1,0 +1,22 @@
+{
+	"name": "Athletes",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AthletesHTTP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "https://raw.githubusercontent.com/lucaslimaa2/Pipeline-Tokyo-Olympics-2020/main/data/Athletes.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
