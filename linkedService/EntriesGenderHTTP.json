@@ -1,0 +1,12 @@
+{
+	"name": "EntriesGenderHTTP",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/lucaslimaa2/Pipeline-Tokyo-Olympics-2020/main/data/EntriesGender.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
