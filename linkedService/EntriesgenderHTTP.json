@@ -1,0 +1,12 @@
+{
+	"name": "EntriesgenderHTTP",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/lucaslimaa2/Pipelines-Azure/main/Tokyo%20Olympics/Datasets/EntriesGender.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
