@@ -21,7 +21,8 @@ Após essa configuração inicial, criei o Data Lake e estruturei as suas camada
 
 Para conectar o Databricks no Data Lake, é necessário realizar um *mount* dos dados com um código em escala já pronto que o Databricks fornece. Após isso, o Data Lake fica acessível nos notebooks do Databricks.
 
-![image](https://github.com/user-attachments/assets/9acc0f46-3c7c-4ef7-a33b-72795ac64fb5)
+![image](https://github.com/user-attachments/assets/056d7751-41a8-4048-953a-4310be50c111)
+
 
 Com isso, desenvolvi os dois notebooks para realizar o processamento dos dados utilizando um pouco a linguagem Scala e PySpark. O objetivo dos notebooks não era realizar processamentos complexos, mas somente ter um contato com a linguagem Scala e estruturar as etapas do Pipeline.
 
