@@ -11,7 +11,7 @@ Resumo do projeto:
 
 O foco deste projeto é estruturar bem todo o caminho que os dados percorrerão com o intuito de praticar o Data Factory e o Synapse Analytics. Ou seja, o processamento dos dados no Databricks será bem simples, pois irei focar nisso em outros projetos.
 
-1) Fonte de dados
+## 1) Fonte de dados
 Primeiramente, baixei todos os arquivos diretamente do Kaggle e armazenei em uma pasta no repositório deste projeto.
 Link dos datasets: https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo
 
@@ -19,17 +19,17 @@ Link dos datasets: https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olymp
 
 A extração do dataset no Kaggle e o carregamento no Github foram feitos manualmente para realizar a ingestão dos dados no Data Factory por meio de uma requisição HTTP.
 
-3) Ingestão dos dados no Data Factory e armazenamento no Data Factory
+## 2) Ingestão dos dados no Data Factory e armazenamento no Data Factory
 Com os dados no Github, montei as etapas de ingestão no Data Factory de cada um dos datasets por meio de requisição HTTP (acessando o link dos arquivos RAW do github). Cada etapa desta ingere um dataset diferente e armazena na camada RAW do datalake.
 
 ![Data Factory](https://github.com/user-attachments/assets/08c22789-1825-457f-aed5-3c735352f350)
 
-4) Processamento
+## 3) Processamento
 Com todos os 5 datasets carregados no datalake, torna-se possível a leitura deles no Databricks com o spark. Como dito anteriormente, a etapa de "processamento" não era o foco do projeto e consistiu apenas na leitura, alguns códigos básicos em spark e no salvamento dos arquivos na camada bronze do Data Lake. O arquivo está neste repositório (https://github.com/lucaslimaa2/Pipelines-Azure-DataFactory/blob/main/Tokyo%20Olympics/1-Processamento%20de%20dados.py)
 
 ![databricks](https://github.com/user-attachments/assets/c20bc385-62ee-4456-85c1-6e0978df6791)
 
-5) Analytics
+## 4) Analytics
 Por fim, a última etapa é utilizar o Synapse Analytics para ler os arquivos do data lake e para escrever algumas queries em SQL e obter alguns insights dos dados. Todo o passo a passo mostrado anteriormente poderia ter sido feito somente no Synapse, que é uma baita ferramenta da Azure.
 
 ![synapse analytics](https://github.com/user-attachments/assets/73833485-eef0-4786-bef1-7d1fe48d214a)
